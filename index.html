@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>在线咨询</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="meiqia-container">
+    <a href="#" onclick="_MEIQIA('showPanel')">点击刷新</a>
+  </div>
+  <script>
+    (function (m, ei, q, i, a, j, s) {
+      m[i] = m[i] || function () {
+        (m[i].a = m[i].a || []).push(arguments)
+      };
+      j = ei.createElement(q),
+        s = ei.getElementsByTagName(q)[0];
+      j.async = true;
+      j.charset = 'UTF-8';
+      j.src = 'https://static.meiqia.com/dist/meiqia.js';
+      s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+
+
+    var meiqiaId = '2bec981bd84c6a65e4e24e47fe64d88c';
+
+
+    _MEIQIA('entId', meiqiaId);
+    _MEIQIA('init');
+    _MEIQIA('showPanel');
+  </script>
+</body>
+
+</html>
